@@ -1,0 +1,483 @@
+{
+  "source": "https://youtu.be/5mGuCdlCcNM",
+  "fps": 60,
+  "width": 1920,
+  "height": 1080,
+  "bboxThreshold": 70,
+  "fitEndsAtFrame": 300,
+  "samples": [
+    {
+      "frame": 0,
+      "seconds": 0.0,
+      "bbox": [
+        431,
+        388,
+        767,
+        536
+      ],
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 60,
+      "seconds": 1.0,
+      "bbox": [
+        731,
+        688,
+        1067,
+        836
+      ],
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 108,
+      "seconds": 1.8,
+      "bbox": [
+        971,
+        928,
+        1307,
+        1076
+      ],
+      "rgb": [
+        150,
+        147,
+        151
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 109,
+      "seconds": 1.8166666666666667,
+      "bbox": [
+        976,
+        923,
+        1312,
+        1071
+      ],
+      "rgb": [
+        150,
+        147,
+        151
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 230,
+      "seconds": 3.8333333333333335,
+      "bbox": [
+        1581,
+        318,
+        1917,
+        466
+      ],
+      "rgb": [
+        218,
+        249,
+        239
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 231,
+      "seconds": 3.85,
+      "bbox": [
+        1576,
+        313,
+        1912,
+        461
+      ],
+      "rgb": [
+        218,
+        249,
+        239
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 293,
+      "seconds": 4.883333333333334,
+      "bbox": [
+        1266,
+        3,
+        1602,
+        151
+      ],
+      "rgb": [
+        199,
+        247,
+        102
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 294,
+      "seconds": 4.9,
+      "bbox": [
+        1261,
+        8,
+        1597,
+        156
+      ],
+      "rgb": [
+        199,
+        247,
+        102
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 300,
+      "seconds": 5.0,
+      "bbox": [
+        1231,
+        38,
+        1567,
+        186
+      ],
+      "rgb": [
+        199,
+        247,
+        102
+      ],
+      "split": "fit",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 600,
+      "seconds": 10.0,
+      "bbox": [
+        271,
+        318,
+        607,
+        466
+      ],
+      "rgb": [
+        235,
+        145,
+        144
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 777,
+      "seconds": 12.95,
+      "bbox": [
+        1156,
+        573,
+        1492,
+        721
+      ],
+      "rgb": [
+        192,
+        253,
+        196
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 987,
+      "seconds": 16.45,
+      "bbox": [
+        956,
+        233,
+        1292,
+        381
+      ],
+      "rgb": [
+        107,
+        99,
+        159
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 1234,
+      "seconds": 20.566666666666666,
+      "bbox": [
+        281,
+        848,
+        617,
+        996
+      ],
+      "rgb": [
+        238,
+        228,
+        157
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 1500,
+      "seconds": 25.0,
+      "bbox": [
+        1551,
+        488,
+        1887,
+        636
+      ],
+      "rgb": [
+        200,
+        169,
+        228
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 1800,
+      "seconds": 30.0,
+      "bbox": [
+        51,
+        138,
+        387,
+        286
+      ],
+      "rgb": [
+        120,
+        148,
+        111
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 2222,
+      "seconds": 37.03333333333333,
+      "bbox": [
+        1101,
+        398,
+        1437,
+        546
+      ],
+      "rgb": [
+        116,
+        189,
+        172
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 2700,
+      "seconds": 45.0,
+      "bbox": [
+        1291,
+        918,
+        1627,
+        1066
+      ],
+      "rgb": [
+        133,
+        154,
+        122
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 3333,
+      "seconds": 55.55,
+      "bbox": [
+        1296,
+        403,
+        1632,
+        551
+      ],
+      "rgb": [
+        227,
+        154,
+        209
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 3600,
+      "seconds": 60.0,
+      "bbox": [
+        531,
+        118,
+        867,
+        266
+      ],
+      "rgb": [
+        104,
+        150,
+        142
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 4444,
+      "seconds": 74.06666666666666,
+      "bbox": [
+        531,
+        408,
+        867,
+        556
+      ],
+      "rgb": [
+        233,
+        186,
+        156
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 4800,
+      "seconds": 80.0,
+      "bbox": [
+        851,
+        338,
+        1187,
+        486
+      ],
+      "rgb": [
+        164,
+        121,
+        215
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 5555,
+      "seconds": 92.58333333333333,
+      "bbox": [
+        236,
+        413,
+        572,
+        561
+      ],
+      "rgb": [
+        241,
+        130,
+        182
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 6000,
+      "seconds": 100.0,
+      "bbox": [
+        1171,
+        788,
+        1507,
+        936
+      ],
+      "rgb": [
+        206,
+        212,
+        254
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 6789,
+      "seconds": 113.15,
+      "bbox": [
+        386,
+        823,
+        722,
+        971
+      ],
+      "rgb": [
+        233,
+        165,
+        104
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 7200,
+      "seconds": 120.0,
+      "bbox": [
+        1491,
+        618,
+        1827,
+        766
+      ],
+      "rgb": [
+        137,
+        252,
+        102
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 8000,
+      "seconds": 133.33333333333334,
+      "bbox": [
+        651,
+        318,
+        987,
+        466
+      ],
+      "rgb": [
+        106,
+        114,
+        212
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    },
+    {
+      "frame": 8765,
+      "seconds": 146.08333333333334,
+      "bbox": [
+        16,
+        193,
+        352,
+        341
+      ],
+      "rgb": [
+        237,
+        165,
+        103
+      ],
+      "split": "held-out",
+      "positionErrorPx": 0
+    }
+  ],
+  "maxHeldOutPositionErrorPx": 0,
+  "excludedSamples": [
+    {
+      "frame": 9000,
+      "bbox": [
+        1201,
+        858,
+        1537,
+        1006
+      ],
+      "positionErrorPx": 10,
+      "reason": "Last clipped-frame observation differs by two motion ticks. Both sequential coarse tracking and random access show this discrepancy; its source is unresolved. Keep it as an explicit fidelity limit, not a passing test or a corrected observation."
+    }
+  ]
+}

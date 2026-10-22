@@ -1,0 +1,19 @@
+# Reference analysis
+
+Primary reference: Raul Blanco, Bouncing DVD Logo Screensaver 4K 60fps - 10 hours NO LOOP, https://youtu.be/5mGuCdlCcNM. Local evidence: first 150 seconds decoded at 1920x1080, 60 fps; first second at native 3840x2160 for the logo mask. Raw clips remain ignored under work/reference/.
+
+Measured geometry at 1080p: visible logo 336 x 148 px; first foreground bbox [431,388,767,536) at reference frame 0. The supplied alpha mask is 672 x 296 from the original 4K first frame, so scale it to 336x148 at 1080p (twice that at 4K). VIDEO lettering and the oval are part of this mask. Background is black; no shadows, trails or text overlays.
+
+Motion is discrete, not continuous reflection: 5 pixels per axis per frame at 60 fps, i.e. 300 px/s at 1080p. Each tick first checks whether the NEXT step would leave the viewport, reverses that axis if so, then moves. It does not clamp to the wall or reflect overshoot continuously. This leaves a 1-4 pixel gap depending on the lattice phase. Confirmed vertical positions: frame107 y923,108 y928,109 y923; frame292 y8,293 y3,294 y8. Confirmed horizontal positions: frame229 x1576,230 x1581,231 x1576. First collisions are ticks109 (bottom),231 (right),294 (top). At frame300 bbox is [1231,38,1567,186). Preserve this preemptive bounce rule. Advance by absolute elapsed 1/60-second ticks, including skipped display frames, so 30/60/120Hz refresh does not change speed. Pause time while hidden and resume without accumulating background travel.
+
+An initial 10-frame coarse scan found 77 color states but missed a brief state between two close contacts. The refined palette samples every predicted contact peak individually. docs/reference/palette.json stores their measured RGB values. First colors are white, [150,147,151], [218,248,239], [199,247,102]. Changes occur on edge collisions. Use the measured states in order for the recorded interval; after those states use deterministic pseudo-random pastel colors (roughly 100-255 per channel), avoiding immediate repeats. Never loop the recorded 150-second color sequence. The original random seed and later ten-hour color order are unknown, so document that limit. Exact corner color ordering is also unverified; reverse both axes on a simultaneous contact and change color once.
+
+Fit interval: first 300 frames / 5s. Root coordinator will independently score later frames against the completed engine and capture fixed-timestamp actual TV renders. Do not call the app pixel-perfect until those checks pass. Provisional acceptance: position error <=1 native 1080p px on held-out frames; matched mask/footprint with codec/threshold tolerance stated, and same sampled color states. Lifecycle and DreamService checks are separate from animation fidelity.
+
+## Held-out result and unresolved boundary sample
+
+The first-five-second fitted model matched 18 later sampled frames through frame8765 (146.083s) with zero pixel position error. The last clipped frame9000 differed by10px / two motion ticks; sequential coarse tracking also shows the discrepancy, so it cannot be dismissed as merely a seek error. Its source is unresolved. Preserve it in the measurement record as an excluded diagnostic, do not claim the entire150s matches, and do not force the animation to reproduce an unexplained recording-boundary jump.
+
+## Color timing correction
+
+Independent production-code scoring found that the video changes color on the CONTACT PEAK (ticks108,230,293), one tick before reversed displacement (ticks109,231,294). Do not delay color until the reversed step. A coarse10-frame scan also missed one short-lived state between near-adjacent contacts; the refined palette now samples every contact frame. The samples and colors in palette.json, and tools/check_reference.py comparing both position and RGB to footage, are authoritative.

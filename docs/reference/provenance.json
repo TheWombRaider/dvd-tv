@@ -1,0 +1,11 @@
+{
+  "referenceUrl": "https://youtu.be/5mGuCdlCcNM",
+  "creator": "Raul Blanco",
+  "retrieved": "2026-10-22",
+  "localEvidenceHashes": {
+    "work/reference/reference-1080p.mp4": "8f398202c920990eeb20bb28adb8c7a7007f795f06e57946995c9433f76014f5",
+    "work/reference/reference-4k.webm": "32b0e91828ccedfba08dffa091d5f2a38e24e23ec8acd039e4a5e79a296ed488",
+    "app/src/main/res/drawable-nodpi/dvd_logo.png": "0063fbf3b19481e2b2f662afa68b27f4f7282ef1a1b227186e8a8890f5bc8462"
+  },
+  "assetExtraction": "Crop first 3840x2160 frame to [862,776,1534,1072); grayscale luminance becomes white-mask alpha. Shape footprint672x296; no video is bundled."
+}

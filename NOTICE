@@ -1,0 +1,26 @@
+DVD Video screensaver for Android TV
+
+The application source and original project tooling are MIT licensed; see LICENSE.
+DVD / DVD VIDEO names and logos belong to their respective owners. No affiliation
+or endorsement is claimed, and no trademark rights are granted by this project.
+The reference-derived logo mask is identified separately from the application code.
+
+Visual reference: Raul Blanco, "Bouncing DVD Logo Screensaver 4K 60fps - 10 hours
+NO LOOP", https://www.youtube.com/watch?v=5mGuCdlCcNM. Measurements and a small
+monochrome alpha mask were derived from the user-supplied reference. No video or
+audio recording is bundled or published here. See docs/reference/provenance.json.
+
+README visual presentation follows TheWombRaider/pipes-tv (MIT), itself styled
+after Gathin23/cleanyourtv (MIT): dark slate, mint accents, Fredoka headings and
+Outfit body text. The artwork-generation approach is adapted from pipes-tv.
+https://github.com/TheWombRaider/pipes-tv
+https://github.com/Gathin23/cleanyourtv
+
+Fredoka and Outfit: Google Fonts, SIL Open Font License 1.1. Fonts are used to
+render static README images and are not bundled in the app or repository.
+https://github.com/google/fonts/tree/main/ofl/fredoka
+https://github.com/google/fonts/tree/main/ofl/outfit
+
+Gradle wrapper files follow the official Gradle distribution conventions and are
+licensed under the Apache License 2.0. Android/Gradle/JUnit dependencies retain
+their respective upstream licenses.
