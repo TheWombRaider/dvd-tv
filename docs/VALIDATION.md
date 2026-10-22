@@ -10,6 +10,7 @@ Validation date: 2026-10-22. Device: TCL Smart TV Pro (G08), Google TV / Android
 | Final launcher-art build: `gradlew.bat --offline --no-daemon --max-workers=2 lintRelease assembleRelease` | BUILD SUCCESSFUL |
 | Release lint | Zero errors; one `ViewConstructor` warning for the programmatically created DvdView, which is not inflated from layout XML |
 | APK permissions | `aapt dump permissions` lists the package and no requested permissions |
+| APK signature | `apksigner verify --verbose` succeeds; APK Signature Scheme v2 |
 | Independent production-Java comparison with decoded footage | 27 samples, including 18 held-out frames; maximum position error 0 px and maximum channel error 1 RGB level |
 | Actual installed preview captures | Seven ticks: 0, 108, 231, 600, 1500, 5555, 8765; all bounding boxes match, maximum channel error 1, minimum foreground-mask intersection-over-union 98.9458% |
 | Live preview | Motion observed; injected Back dismissed the preview |
@@ -37,7 +38,7 @@ The JVM tests cover reflections, corners, extreme elapsed times, measured color 
 
 ## Separate showcase repository
 
-The contribution changes only SHOWCASE.md in cleanyourtv. Its full Python suite was attempted on Windows: 429 tests ran, with 13 failures, 85 errors and 11 skips. Many shell/fake-ADB tests could not launch their expected commands (`FileNotFoundError: [WinError 2]`). This is not a passing upstream suite, and unrelated tests or production code were not changed to conceal it. The DVD app build, unit tests and real-TV checks above are separate, passing checks.
+The contribution changes only SHOWCASE.md in cleanyourtv. All five dedicated Markdown-link tests passed. Its full Python suite was attempted on Windows: 429 tests ran, with 13 failures, 85 errors and 11 skips. Many shell/fake-ADB tests could not launch their expected commands (`FileNotFoundError: [WinError 2]`). This is not a passing upstream suite, and unrelated tests or production code were not changed to conceal it. The DVD app build, unit tests and real-TV checks above are separate, passing checks.
 
 ## Reproduce
 
