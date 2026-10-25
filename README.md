@@ -100,8 +100,6 @@ adb shell am start -S -n io.github.thewombraider.dvdtv/.PreviewActivity --el cap
 
 The production DreamService never reads those extras. `tools/verify_tv_preview.py --serial <adb-device>` checks actual preview captures and preserves screensaver settings. Use `--wake-and-restore` only when temporarily waking a sleeping TV is authorized. Local evidence stays under ignored `work/`. These two analysis tools require Python with OpenCV and NumPy; `tools/make_readme_art.py` also uses Pillow and Google Fonts' Fredoka/Outfit files to regenerate the static README artwork.
 
-[PROJECT_PROMPT.md](PROJECT_PROMPT.md) is the build brief, refined with the [be-ambitious assessment](docs/BE_AMBITIOUS.md). Shared progress and recovery notes are in docs/AI_STATE.md, docs/AI_DECISIONS.md and docs/AI_HANDOFF.md. The initial implementation ran through OpenCode and OmniRoute using the official Codex client; provider switching is manual, with official Antigravity available if quota interrupts a task. No custom model router was built.
-
 ## Credits and license
 
 Application source: MIT, see [LICENSE](LICENSE). DVD branding, the user-supplied reference, fonts and README styling have separate credits in [NOTICE](NOTICE). The presentation follows [pipes-tv](https://github.com/TheWombRaider/pipes-tv), itself inspired by [cleanyourtv](https://github.com/Gathin23/cleanyourtv).

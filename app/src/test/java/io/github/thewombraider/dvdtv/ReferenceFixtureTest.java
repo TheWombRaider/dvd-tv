@@ -36,7 +36,7 @@ public class ReferenceFixtureTest {
 
     private static List<String[]> samples() throws Exception {
         InputStream stream = ReferenceFixtureTest.class.getResourceAsStream("/reference-samples.tsv");
-        assertNotNull("Missing coordinator reference measurements", stream);
+        assertNotNull("Missing reference measurements", stream);
         List<String[]> samples = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8))) {
             for (String line; (line = reader.readLine()) != null;) samples.add(line.split("\t"));

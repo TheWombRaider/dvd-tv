@@ -30,16 +30,7 @@ The JVM tests cover reflections, corners, extreme elapsed times, measured color 
 
 ## Limits and unverified checks
 
-- The new DreamService is built and shares the tested renderer, but its actual activation and automatic idle startup were not tested. The user authorized installation and preview only; no selected-screensaver setting was changed.
+- The new DreamService is built and shares the tested renderer, but its actual activation and automatic idle startup were not tested.
 - Real-device D-pad keys, other TVs, native 4K output, sustained frame pacing, long-duration memory use and power consumption have not been measured. JVM checks establish simulation timing, not a hardware performance benchmark.
 - The final clipped reference frame at 150 seconds differs by 10 px / two motion ticks. Its cause remains unresolved; it is preserved as an excluded diagnostic. No claim of complete ten-hour frame identity is made.
 - Only 78 opening color states are measured. Subsequent colors are deterministic generated pastels; the source's full random sequence is unknown.
-- Implementation used OpenCode with OmniRoute and the official Codex app-server. No quota exhaustion occurred. Automatic cross-provider failover is unavailable in the deployed configuration; official Antigravity remains a manual continuation path using repository state and handoff notes.
-
-## Separate showcase repository
-
-The contribution changes only SHOWCASE.md in cleanyourtv. All five dedicated Markdown-link tests passed. Its full Python suite was attempted on Windows: 429 tests ran, with 13 failures, 85 errors and 11 skips. Many shell/fake-ADB tests could not launch their expected commands (`FileNotFoundError: [WinError 2]`). This is not a passing upstream suite, and unrelated tests or production code were not changed to conceal it. The DVD app build, unit tests and real-TV checks above are separate, passing checks.
-
-## Reproduce
-
-Use JDK 21, Android SDK 34 and the included Gradle 8.9 wrapper. Set JAVA_HOME and ANDROID_HOME for the local installation, then run the commands above and `python tools/check_reference.py`. See README.md for Python dependencies and preview commands. Only run device validation on an authorized connected TV; `--wake-and-restore` explicitly authorizes a temporary wake and restores an initially sleeping TV.
