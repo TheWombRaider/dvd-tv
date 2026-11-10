@@ -1,8 +1,7 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="docs/banner.png">
+  <a href="docs/hero.gif">
     <img src="docs/hero.gif" alt="DVD Video. The bouncing DVD logo, on your TV. Normal-speed app capture showing wall bounces and color changes." width="800">
-  </picture>
+  </a>
 </p>
 
 <p align="center">
