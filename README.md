@@ -12,10 +12,6 @@
   <a href="https://github.com/Gathin23/cleanyourtv"><img src="https://img.shields.io/badge/inspired%20by-Clean%20Your%20TV-cfffcf?style=flat&labelColor=15181e" alt="Inspired by Clean Your TV"></a>
 </p>
 
-<p align="center">
-  <img src="docs/card.png" alt="60 reference frames per second, 300 pixels per second on each axis at 1080p, 18 held-out reference frames, and a capture of the app running on Android TV." width="800">
-</p>
-
 **DVD Video screensaver for Android TV** brings the floating DVD logo to Android TV and Google TV: one logo, a black screen, and a new color at each wall contact. It follows the measured motion of [Raul Blanco's 4K, 60 fps recording](https://youtu.be/5mGuCdlCcNM), using the same fidelity-first approach as [3D Pipes](https://github.com/TheWombRaider/pipes-tv).
 
 *Unofficial. DVD and DVD VIDEO names and logos belong to their respective owners. No affiliation or endorsement is claimed. No video or audio recording is bundled.*
