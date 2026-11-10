@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="docs/banner.png" alt="DVD Video. The bouncing DVD logo, on your TV. Measured motion. Native Android. No network." width="800">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="docs/banner.png">
+    <img src="docs/hero.gif" alt="DVD Video. The bouncing DVD logo, on your TV. Normal-speed app capture showing wall bounces and color changes." width="800">
+  </picture>
 </p>
 
 <p align="center">
